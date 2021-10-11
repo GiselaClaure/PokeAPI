@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,300;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    font-family: "Josefin-Sans";
+    background-color: #efefd0;
+    max-width: 100%;
+};
+.header{
+    width: 100%;
+    height: 300px;
+    background-color: #dd1c1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__img{
+    height: 85%;
+}
+.display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 26px;
+    padding: 10px;
+}
+
+.display__element{
+    margin: 8px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 3px blue;
+    width: 20%;
+}
+.display__name{
+    color: #efefd0;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.display__img{
+    
+background-image: url(https://www.vippng.com/png/full/121-1211804_adornos-png-para-photoscape-remolino-png.png);
+}
+
