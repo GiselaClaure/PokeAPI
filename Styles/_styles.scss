@@ -7,22 +7,33 @@
 
 body{
     font-family: "Josefin-Sans";
-    background-color: #efefd0;
+    background-color: #fff1d0;
     max-width: 100%;
 };
 .header{
     width: 100%;
-    height: 300px;
+    max-height: 300px;
     background-color: #dd1c1a;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 .header__img{
-    height: 85%;
+    max-width: 80%;
+    width: 400px;
+    
+}
+.tittle{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
 }
 .display{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 26px;
@@ -30,22 +41,38 @@ body{
 }
 
 .display__element{
-    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
     margin-top: 15px;
     padding: 10px;
     border-radius: 20px;
-    border: solid 3px blue;
-    width: 20%;
+    border: solid 5px #004e89;
+    min-width: 10%;
+    max-width: 350px;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/933/827/743/pokemon-pixel-art-wallpaper-preview.jpg);
+    background-size: cover;
+    :hover.display__image{
+        transform: rotateY(180deg);
+    }
 }
 .display__name{
-    color: #efefd0;
-    font-size: 50px;
+    background-color: #dd1c1a;
+    color:#fff1d0;
+    max-width: 90%;
+    font-size: 30px;
     text-align: center;
-    margin-top: 10px;
+    border-radius: 8px;
+    padding: 6px;
 }
 
-.display__img{
-    
-background-image: url(https://www.vippng.com/png/full/121-1211804_adornos-png-para-photoscape-remolino-png.png);
+.display__image{
+    display: flex;
+    max-width: 100%;
+}
+.display__id{
+    color:#fff1d0;
+    text-align: right;
+
 }
 
