@@ -10,7 +10,7 @@ const getPokemon = async () => {
     }
     console.log(pokemonData); 
     
-    const pokemons = pokemonData.map((element,image) => ({
+    const pokemons = pokemonData.map((element) => ({
         name: element.name,
         image: element.sprites.other["official-artwork"]["front_default"],
         id: element.id,
@@ -20,14 +20,14 @@ const getPokemon = async () => {
 }
 
 const displayPokemon=(pokemons)=>{
-    const characterHTML=pokemons.map((pokemon)=>
+    const pokemonHTML=pokemons.map((pokemon)=>
         `<div class="display__element">
             <h2 class="display__name">${pokemon.name}</h2>
             <img class="display__image" src="${pokemon.image}" alt="${pokemon.name}"/>
             <p class= "display__id">${pokemon.id}</p>
         </div>`
     ).join("");
-    display.innerHTML=characterHTML
+    display.innerHTML=pokemonHTML
     
 };
 
