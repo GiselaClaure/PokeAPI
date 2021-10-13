@@ -43,6 +43,7 @@ body{
 .display__element{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 5px;
     margin-top: 15px;
     padding: 10px;
@@ -58,13 +59,14 @@ body{
     }
 }
 .display__name{
-    background-color: #dd1c1a;
-    color:#fff1d0;
+    background-image: url("https://i.pinimg.com/originals/e8/11/55/e81155c99f38526fdc1f920c826e0756.png");
+    color:#ca3936;
+    text-shadow: 2px 2px 2px #fff1d096;
     max-width: 90%;
     font-size: 30px;
     text-align: center;
     border-radius: 8px;
-    padding: 6px;
+    padding: 6px,
 }
 
 .display__image{
@@ -73,7 +75,5 @@ body{
 }
 .display__id{
     color:#fff1d0;
-    text-align: right;
-
 }
 
